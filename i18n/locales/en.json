@@ -1,0 +1,329 @@
+{
+  "appName": "Prompter Fresh",
+  "appDescription": "Professional Prompt Design & Optimization Tool",
+  "tabs": {
+    "dashboard": "Dashboard",
+    "home": "Enhancer",
+    "architect": "Architect",
+    "templates": "Templates", 
+    "library": "Library",
+    "settings": "Settings"
+  },
+  "header": {
+    "title": "🤖 Prompter Fresh",
+    "subtitle": "Professional Prompt Design & Optimization Tool"
+  },
+  "promptEnhancer": {
+    "title": "✨ Prompt Enhancer",
+    "description": "Enhance and optimize your prompts with AI",
+    "placeholder": "Enter your prompt here...",
+    "button": "Enhance Prompt",
+    "loading": "Enhancing...",
+    "error": "Error enhancing prompt",
+    "result": "Enhanced Prompt:",
+    "copy": "Copy",
+    "copySuccess": "Prompt copied to clipboard!"
+  },
+  "promptArchitect": {
+    "title": "🏗️ Prompt Architect", 
+    "description": "Build professional prompts step by step",
+    "selectRole": "1. Select Role:",
+    "selectTaskFor": "2. Select Task for {roleName}:",
+    "languageSettings": "Language Settings (Optional):",
+    "inputLanguage": "Input Language:",
+    "outputLanguage": "Output Language:",
+    "defaultLanguage": "Default (Based on Input)",
+    "completeInfoFor": "3. Complete Information for: {taskName}:",
+    "generateButton": "🔧 Generate Prompt",
+    "enhanceButton": "✨ Enhance with Prompt Oracle",
+    "generatedPrompt": "📄 Generated Prompt",
+    "optimizedPrompt": "Final Optimized Prompt:",
+    "error": "Error",
+    "fillRequiredFields": "Please fill all required fields.",
+    "errorOptimizing": "Error optimizing prompt",
+    "loading": "Loading...",
+    "enhancing": "Enhancing...",
+    "pickAnItem": "-- Select --",
+    "copy": "📋 Copy",
+    "copySuccess": "Prompt copied!"
+  },
+  "promptLibrary": {
+    "title": "📚 Prompt Library",
+    "description": "Your saved prompt collection",
+    "addNew": "➕ Add New Prompt",
+    "search": "Search prompts...",
+    "categories": {
+      "all": "All",
+      "coding": "Programming", 
+      "writing": "Writing",
+      "marketing": "Marketing",
+      "analysis": "Analysis",
+      "creative": "Creative",
+      "business": "Business"
+    },
+    "emptyState": {
+      "title": "No prompts found",
+      "searchMessage": "Try different filters",
+      "firstMessage": "Add your first prompt"
+    },
+    "card": {
+      "copy": "Copy",
+      "edit": "Edit", 
+      "delete": "Delete"
+    },
+    "modal": {
+      "addTitle": "Add New Prompt",
+      "editTitle": "Edit Prompt",
+      "titleLabel": "Prompt Title",
+      "titlePlaceholder": "Enter prompt title",
+      "categoryLabel": "Category",
+      "contentLabel": "Prompt Content",
+      "contentPlaceholder": "Enter prompt content",
+      "tagsLabel": "Tags (comma separated)",
+      "tagsPlaceholder": "e.g., AI, GPT, analysis",
+      "favoriteLabel": "Add to favorites",
+      "cancel": "Cancel",
+      "save": "Save Changes",
+      "add": "Add Prompt"
+    },
+    "deleteConfirm": "Are you sure you want to delete this prompt?"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure your application preferences and API settings",
+    "apiKeyTitle": "OpenAI API Key",
+    "apiKeyDesc": "Enter your OpenAI API key to enable AI-powered features",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "Enter your OpenAI API key",
+    "saveApiKey": "Save API Key",
+    "removeKey": "Remove Key",
+    "autoTranslation": "Auto-Translation",
+    "autoTranslationDesc": "Automatically translate interface to your system language",
+    "enableTranslation": "Enable Translation",
+    "disableTranslation": "Switch to English",
+    "about": "About",
+    "aboutDesc": "Information about this application and its development team",
+    "version": "Version",
+    "developer": "Developer"
+  },
+  "tasks": {
+    "codeReview": "Code Review",
+    "debugging": "Debugging",
+    "systemDesign": "System Design",
+    "dataAnalysis": "Data Analysis",
+    "reportCreation": "Report Creation",
+    "campaignStrategy": "Campaign Strategy",
+    "contentCreation": "Content Creation",
+    "articleWriting": "Article Writing",
+    "seoContent": "SEO Content",
+    "strategicPlanning": "Strategic Planning",
+    "marketAnalysis": "Market Analysis",
+    "lessonPlanning": "Lesson Planning",
+    "assessmentDesign": "Assessment Design",
+    "uiDesign": "UI Design",
+    "brandDesign": "Brand Design",
+    "projectPlanning": "Project Planning",
+    "riskAssessment": "Risk Assessment"
+  },
+  "fields": {
+    "codeSnippet": "Code Snippet",
+    "language": "Programming Language",
+    "concerns": "Specific Concerns",
+    "error": "Error Message",
+    "code": "Code",
+    "context": "Context",
+    "requirements": "Requirements",
+    "constraints": "Constraints",
+    "dataset": "Dataset Description",
+    "goals": "Analysis Goals",
+    "data": "Data Source",
+    "audience": "Target Audience",
+    "product": "Product/Service",
+    "budget": "Budget Range",
+    "topic": "Topic",
+    "platform": "Platform",
+    "tone": "Desired Tone",
+    "wordCount": "Word Count",
+    "keywords": "SEO Keywords",
+    "length": "Content Length",
+    "business": "Business Context",
+    "timeline": "Timeline",
+    "subject": "Subject",
+    "grade": "Grade Level",
+    "objectives": "Learning Objectives",
+    "assessmentType": "Assessment Type",
+    "project": "Project Description",
+    "style": "Design Style",
+    "company": "Company",
+    "values": "Brand Values",
+    "resources": "Available Resources",
+    "risks": "Potential Risks",
+    "market": "Market",
+    "competitors": "Competitors"
+  },
+  "placeholders": {
+    "codeSnippet": "Paste your code here...",
+    "language": "e.g., JavaScript, Python, Java",
+    "concerns": "What specifically should be reviewed?",
+    "error": "Paste the error message...",
+    "code": "Paste the problematic code...",
+    "context": "Describe when this error occurs...",
+    "requirements": "List the system requirements...",
+    "constraints": "Any technical or business constraints...",
+    "dataset": "Describe your dataset...",
+    "goals": "What insights are you looking for?",
+    "data": "Describe your data source...",
+    "audience": "e.g., young professionals, students",
+    "product": "Name and brief description of product...",
+    "budget": "e.g., $5,000 - $10,000",
+    "topic": "Enter the main topic...",
+    "platform": "e.g., Instagram, LinkedIn, Blog",
+    "tone": "e.g., professional, casual, friendly",
+    "wordCount": "e.g., 500-1000 words",
+    "keywords": "Enter target keywords separated by commas...",
+    "length": "e.g., short, medium, long",
+    "business": "Describe your business situation...",
+    "timeline": "e.g., 3 months, Q1 2024",
+    "subject": "e.g., Mathematics, History",
+    "grade": "e.g., Grade 5, High School",
+    "objectives": "What should students learn?",
+    "assessmentType": "e.g., Quiz, Project, Essay",
+    "project": "Describe the project scope...",
+    "style": "e.g., modern, minimalist, corporate",
+    "company": "Company name and industry...",
+    "values": "Core brand values and personality...",
+    "resources": "Available team, budget, tools...",
+    "risks": "What could go wrong?",
+    "market": "Target market description...",
+    "competitors": "List main competitors..."
+  },
+  "architect": {
+    "title": "Prompt Architect",
+    "subtitle": "Build structured prompts using professional role-based templates",
+    "selectRole": "Select Professional Role",
+    "selectTask": "Select Task for",
+    "completeInfo": "Complete Information for",
+    "generatePrompt": "Generate Prompt",
+    "generatedPrompt": "Generated Prompt",
+    "tasks": "tasks",
+    "fields": "fields"
+  },
+  "messages": {
+    "fillRequired": "Please fill all required fields",
+    "apiKeyRequired": "Please set your OpenAI API key in Settings",
+    "promptGenerated": "Prompt generated successfully!",
+    "generateError": "Error generating prompt",
+    "promptCopied": "Prompt copied to clipboard!"
+  },
+  "common": {
+    "loading": "Loading...",
+    "copy": "Copy",
+    "available": "available",
+    "required": "required"
+  },
+  "roles": {
+    "developer": "Software Developer",
+    "dataAnalyst": "Data Analyst",
+    "marketingSpecialist": "Marketing Specialist",
+    "contentWriter": "Content Writer",
+    "businessConsultant": "Business Consultant",
+    "teacher": "Teacher",
+    "designer": "Designer",
+    "projectManager": "Project Manager"
+  },
+  "templateGallery": {
+    "title": "🎨 Template Gallery",
+    "search": "Search templates...",
+    "categories": {
+      "all": "All Categories",
+      "business": "Business",
+      "creative": "Creative",
+      "technical": "Technical",
+      "marketing": "Marketing",
+      "education": "Education"
+    },
+    "premium": "Premium",
+    "free": "Free",
+    "use": "Use Template",
+    "copy": "Copy",
+    "favorite": "Add to Favorites",
+    "emptyState": "No templates found matching your search"
+  },
+  "errors": {
+    "purchase": {
+      "userCancelled": "Purchase was cancelled by user",
+      "paymentMethod": "There is an issue with your payment method",
+      "networkError": "Internet connection problem detected",
+      "billingUnavailable": "Purchase service is temporarily unavailable",
+      "productUnavailable": "This product is currently unavailable",
+      "validationFailed": "Purchase verification failed",
+      "serverError": "Server error occurred",
+      "unknownError": "An unexpected error occurred"
+    },
+    "guidance": {
+      "userCancelled": [
+        "✋ You cancelled the purchase",
+        "🔄 You can try again when ready"
+      ],
+      "paymentMethod": [
+        "💳 There is an issue with your payment method",
+        "🔧 Check your payment method in Google Play settings",
+        "💰 Make sure you have sufficient balance",
+        "📱 Update your payment information if needed"
+      ],
+      "networkError": [
+        "🌐 Internet connection problem",
+        "📶 Check your Wi-Fi or mobile data connection",
+        "🔄 Try again in a few minutes",
+        "📍 Move to an area with better signal if needed"
+      ],
+      "billingUnavailable": [
+        "🛒 Purchase service is temporarily unavailable",
+        "🔄 Please try again in a few minutes",
+        "📱 Make sure Google Play Services is updated",
+        "⏰ The service should be back online shortly"
+      ],
+      "productUnavailable": [
+        "❌ This product is currently unavailable",
+        "📞 Contact support for assistance",
+        "🔄 Check back later as availability may change"
+      ],
+      "validationFailed": [
+        "🔒 Purchase verification failed",
+        "📞 Please contact support for assistance",
+        "🔐 This is a security measure to protect your account"
+      ],
+      "serverError": [
+        "🖥️ Server error occurred",
+        "🔄 Please try again in a few minutes",
+        "⏰ Our team has been notified and is working on it"
+      ],
+      "unknownError": [
+        "❓ An unexpected error occurred",
+        "🔄 Please try again",
+        "📞 Contact support if the problem persists"
+      ]
+    },
+    "api": {
+      "invalidApiKey": "Invalid API key. Please check your configuration.",
+      "rateLimitExceeded": "Rate limit exceeded. Please try again in a minute.",
+      "tokenLimitReached": "Monthly token limit reached. Upgrade to Pro plan for more tokens.",
+      "requestLimitReached": "Monthly request limit reached. Try again next month.",
+      "networkError": "Network connection failed. Please check your internet connection.",
+      "serverError": "Server error occurred. Please try again later.",
+      "validationError": "Input validation failed. Please check your prompt.",
+      "unknownError": "An unexpected error occurred. Please try again."
+    },
+    "general": {
+      "somethingWentWrong": "Something went wrong",
+      "tryAgain": "Try again",
+      "contactSupport": "Contact support",
+      "loading": "Loading...",
+      "saving": "Saving...",
+      "processing": "Processing...",
+      "success": "Success!",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    }
+  }
+}

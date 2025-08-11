@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prompter Fresh</string>
+    <string name="title_activity_main">Prompter Fresh</string>
+    <string name="package_name">com.prompterfresh.app</string>
+    <string name="custom_url_scheme">com.prompterfresh.app</string>
+</resources>

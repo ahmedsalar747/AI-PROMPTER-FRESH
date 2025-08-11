@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Updated Color Palette - Harmonized Dark Theme */
+  --primary-color: #007aff;        /* Consistent blue for all accents */
+  --bg-primary: #0d1117;           /* Main app background */
+  --bg-secondary: #1e1e1e;         /* Cards and components (matched to our redesigned pages) */
+  --bg-tertiary: #2a2a2e;         /* Input fields and hover states */
+  --bg-hover: #3a3a3e;            /* Hover effects and borders */
+  --text-primary: #ffffff;         /* Main text color (white) */
+  --text-secondary: #a0a0a0;       /* Muted text color (light gray) */
+  --border-color: #3a3a3e;         /* Border color (consistent with pages) */
+  
+  --border-radius: 12px;           /* Card border radius */
+  --border-radius-sm: 8px;         /* Button/input border radius */
+  --transition: all 0.3s ease;
+  --font-family: 'Inter', sans-serif;
+  
+  /* Box shadow for consistency */
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Fullscreen mobile support */
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  overflow-x: hidden;
+}
+
+/* Fullscreen mobile styles */
+html {
+  height: 100%;
+  height: 100dvh;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global scrollbar hiding */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  body {
+    /* Prevent zoom on input focus */
+    font-size: 16px;
+  }
+  
+  /* Ensure full width on mobile */
+  * {
+    max-width: 100vw;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove old app-specific styles that will be replaced */
+.app, .app-header, .bottom-nav, .app-content {
+  all: unset; /* Reset all inherited styles */
+  display: block; /* Ensure they don't disappear */
+} 

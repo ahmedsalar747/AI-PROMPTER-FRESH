@@ -1,0 +1,101 @@
+.template-usage-counter {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.usage-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usage-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.usage-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.usage-title {
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.usage-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.usage-stats {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.usage-stats .used {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.usage-stats .separator {
+  color: #adb5bd;
+}
+
+.usage-stats .total {
+  color: #495057;
+  font-weight: 600;
+}
+
+.usage-stats .remaining {
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .template-usage-counter {
+    padding: 10px;
+  }
+
+  .usage-content {
+    gap: 10px;
+  }
+
+  .usage-icon {
+    font-size: 18px;
+  }
+
+  .usage-title {
+    font-size: 13px;
+  }
+
+  .usage-stats {
+    font-size: 11px;
+  }
+} 

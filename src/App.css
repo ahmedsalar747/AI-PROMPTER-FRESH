@@ -1,0 +1,4 @@
+/* 
+  All styles for the main app shell are now in App.redesigned.css.
+  This file is kept to prevent import errors but can be removed if the import is also removed from main.tsx.
+*/ 

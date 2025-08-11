@@ -1,0 +1,120 @@
+.ad-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ad-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ad-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.ad-title {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.ad-message {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.ad-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.upgrade-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #667eea;
+}
+
+.upgrade-btn:hover {
+  background: #f8f9fa;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.ad-price {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Position variants */
+.ad-banner.top {
+  margin-bottom: 16px;
+}
+
+.ad-banner.bottom {
+  margin-top: 16px;
+}
+
+.ad-banner.sidebar {
+  margin: 8px 0;
+  padding: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ad-banner {
+    padding: 12px;
+    margin: 12px 0;
+  }
+
+  .ad-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ad-actions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .upgrade-btn {
+    flex: 1;
+    justify-content: center;
+  }
+} 

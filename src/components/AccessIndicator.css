@@ -1,0 +1,114 @@
+.access-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  border-radius: 12px;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.access-indicator.small {
+  padding: 0.25rem;
+  gap: 0.25rem;
+  border-radius: 8px;
+}
+
+.access-indicator.medium {
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-radius: 12px;
+}
+
+.access-indicator.large {
+  padding: 0.75rem;
+  gap: 0.75rem;
+  border-radius: 16px;
+}
+
+.access-indicator.accessible {
+  background: rgba(var(--difficulty-color-rgb, 59, 130, 246), 0.1);
+  border: 2px solid rgba(var(--difficulty-color-rgb, 59, 130, 246), 0.3);
+}
+
+.access-indicator.locked {
+  background: rgba(107, 114, 128, 0.1);
+  border: 2px solid rgba(107, 114, 128, 0.3);
+  opacity: 0.7;
+}
+
+.difficulty-icon {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.access-indicator.small .difficulty-icon {
+  font-size: 1rem;
+}
+
+.access-indicator.large .difficulty-icon {
+  font-size: 1.5rem;
+}
+
+.difficulty-text {
+  font-weight: 600;
+  color: var(--difficulty-color, #374151);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.access-indicator.locked .difficulty-text {
+  color: #6b7280;
+}
+
+.lock-icon {
+  font-size: 0.8em;
+  margin-left: 0.25rem;
+  opacity: 0.8;
+}
+
+.access-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.access-indicator.locked:hover .access-overlay {
+  opacity: 1;
+}
+
+.unlock-hint {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Difficulty color variables */
+.access-indicator[style*="--difficulty-color: #10b981"] {
+  --difficulty-color-rgb: 16, 185, 129;
+}
+
+.access-indicator[style*="--difficulty-color: #f59e0b"] {
+  --difficulty-color-rgb: 245, 158, 11;
+}
+
+.access-indicator[style*="--difficulty-color: #ef4444"] {
+  --difficulty-color-rgb: 239, 68, 68;
+}
+
+.access-indicator[style*="--difficulty-color: #8b5cf6"] {
+  --difficulty-color-rgb: 139, 92, 246;
+} 

@@ -1,0 +1,211 @@
+/* src/pages/Settings.redesigned.css */
+
+.settings-page-redesigned {
+  padding: 1rem;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.settings-sidebar-redesigned {
+  width: 100%;
+}
+
+.settings-nav-redesigned {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 1px solid #3a3a3e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item-redesigned {
+  padding: 0.75rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  flex: 1;
+  min-width: fit-content;
+  box-sizing: border-box;
+}
+
+.nav-item-redesigned:hover {
+  background-color: #2a2a2e;
+  color: #ffffff;
+}
+
+.nav-item-redesigned.active {
+  background-color: #007aff;
+  color: #ffffff;
+}
+
+.settings-content-redesigned {
+  width: 100%;
+}
+
+.settings-section-redesigned {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid #3a3a3e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.settings-section-redesigned h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #3a3a3e;
+  word-wrap: break-word;
+}
+
+.settings-section-redesigned p {
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* New: Token Usage Section Styles */
+.token-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.token-balance-section {
+  background-color: #2a2a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #3a3a3e;
+}
+
+.token-management-section {
+  background-color: #2a2a2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid #3a3a3e;
+}
+
+.settings-token-display {
+  margin: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Responsive design for token sections */
+@media (min-width: 1024px) {
+  .token-sections {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .token-balance-section,
+  .token-management-section {
+    flex: 1;
+  }
+}
+
+.btn-primary-redesigned {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary-redesigned:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary-redesigned:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nav-icon {
+  font-size: 1.1rem;
+}
+
+.nav-label {
+  font-weight: 500;
+}
+
+/* Loading states */
+.settings-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #a0a0a0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .settings-page-redesigned {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+  
+  .settings-nav-redesigned {
+    padding: 0.75rem;
+    gap: 0.25rem;
+  }
+  
+  .nav-item-redesigned {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    min-width: auto;
+    flex: none;
+  }
+  
+  .nav-icon {
+    font-size: 1rem;
+  }
+  
+  .settings-section-redesigned {
+    padding: 1rem;
+  }
+  
+  .settings-section-redesigned h2 {
+    font-size: 1.25rem;
+  }
+  
+  .token-sections {
+    gap: 1rem;
+  }
+  
+  .token-balance-section,
+  .token-management-section {
+    padding: 1rem;
+  }
+} 

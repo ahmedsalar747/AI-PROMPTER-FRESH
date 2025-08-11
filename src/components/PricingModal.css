@@ -1,0 +1,267 @@
+.pricing-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.pricing-modal {
+  background: #1e1e1e;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid #3a3a3e;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #3a3a3e;
+}
+
+.modal-header h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #3a3a3e;
+  color: #ffffff;
+}
+
+.modal-content {
+  padding: 1.5rem;
+}
+
+.pricing-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-intro p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.pricing-plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.plan-card {
+  background: #2a2a2e;
+  border: 2px solid #3a3a3e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  border-color: #007aff;
+  transform: translateY(-2px);
+}
+
+.plan-card.yearly {
+  border-color: #007aff;
+  background: linear-gradient(135deg, #2a2a2e 0%, #1e3a8a 100%);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007aff;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.plan-header h3 {
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.plan-price {
+  margin-bottom: 0.5rem;
+}
+
+.plan-price .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007aff;
+}
+
+.plan-price .period {
+  color: #a0a0a0;
+  font-size: 1rem;
+}
+
+.savings {
+  color: #10b981;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.plan-features li {
+  color: #e0e0e0;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.plan-features li:before {
+  content: '✅';
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.upgrade-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.upgrade-btn.monthly {
+  background: #007aff;
+  color: #ffffff;
+}
+
+.upgrade-btn.monthly:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.upgrade-btn.yearly {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.upgrade-btn.yearly:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.modal-footer {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #3a3a3e;
+}
+
+.terms {
+  color: #6c757d;
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-modal {
+    margin: 1rem;
+    max-height: 95vh;
+  }
+
+  .pricing-plans {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .plan-card {
+    padding: 1rem;
+  }
+
+  .plan-price .price {
+    font-size: 2rem;
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .pricing-intro p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-modal-overlay {
+    padding: 0.5rem;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .plan-card {
+    padding: 0.75rem;
+  }
+
+  .plan-price .price {
+    font-size: 1.75rem;
+  }
+
+  .upgrade-btn {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+} 
